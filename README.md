@@ -83,8 +83,6 @@ src/
 | Avain | Kuvaus |
 |------|-------|
 | `MONGODB_URI` | MongoDB-yhteysmerkkijono |
-| `NEXT_PUBLIC_APP_NAME` | Sovelluksen nimi käyttöliittymässä (valinnainen) |
-| `PORT` | Palvelimen portti (oletus 3000) |
 
 ---
 
@@ -93,26 +91,9 @@ src/
 - Node.js ja Bun tulee olla asennettuna paikallisesti.
 - Palvelin yhdistää MongoDB:hen käyttäen `.env`-tiedoston `MONGODB_URI`-arvoa.
 - UI-komponentit sijaitsevat hakemistossa `src/components/ui`.
-- Älä koskaan tallenna salaisuuksia git-repoon.
 
 ---
 
-## Testaus
-
-Voit käyttää Bunin kanssa yhteensopivaa testirunneria tai Node-pohjaisia ratkaisuja (Jest, Playwright).  
-Lisää testiskriptit `package.json`- tai Bun-skripteihin tarpeen mukaan.
-
----
-
-## Docker (valinnainen)
-
-Sovellus ja MongoDB voidaan kontittaa paikallista testausta varten.  
-Tyypillinen ratkaisu sisältää:
-
-- `Dockerfile`
-- `docker-compose.yml` (`app` + `mongo`)
-
----
 
 ## Vianmääritys
 
@@ -121,23 +102,3 @@ Tyypillinen ratkaisu sisältää:
 - **Ympäristömuuttujat eivät lataudu:** varmista `.env`-tiedoston sijainti.
 
 ---
-
-## Osallistuminen
-
-1. Forkkaa repo
-2. Luo feature-haara  
-   ```bash
-   git checkout -b feat/oma-ominaisuus
-   ```
-3. Commitoi muutokset  
-   ```bash
-   git commit -m "feat: ..."
-   ```
-4. Pushaa ja avaa Pull Request
-
----
-
-## Lisenssi
-
-Tämä projekti on **MIT-lisensoitu**.  
-Lisää repoosi `LICENSE`-tiedosto.
