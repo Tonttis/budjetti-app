@@ -2,7 +2,7 @@
 # Personal Budget Tracker
 
 Yksinkertainen ja moderni verkkosovellus tulojen, menojen, budjettien ja taloudellisten tavoitteiden seurantaan.  
-Rakennettu **Next.js:llä (App Router)**, **Bunilla** ja **MongoDB:llä**.
+Rakennettu **Next.js:llä (App Router)**, **Bunilla** ja **MongoDB:llä**. (Alunperin testattu Angular CLI:n avulla)
 
 ---
 
